@@ -24,7 +24,7 @@ def is_music_link(submission):
 def get_wanted_posts(r, subs_string):
     seen_recently = deque(maxlen=1000)
 
-    for submission in r.subreddit(subs_string).stream.submissions(skip_existing=False):  # TODO
+    for submission in r.subreddit(subs_string).stream.submissions(skip_existing=True):
         if is_music_link(submission) and submission.url not in seen_recently:
             seen_recently.append(submission.url)
             yield submission
