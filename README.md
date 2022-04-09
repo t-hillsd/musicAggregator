@@ -8,6 +8,10 @@
 4. Create a config file based on the example in the project root folder at `instance/config.json`
 5. From the project root, run `poetry run python -m musicAggregator`.
 
+## Limitations
+
+All the bot's submissions will end up in spam if the bot is a low karma account. They can be manually approved by a moderator.
+
 ## Example config
 
 ```json
